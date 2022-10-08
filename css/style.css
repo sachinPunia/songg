@@ -1,0 +1,513 @@
+/* ----------------------------- Navbar --------------------------- */
+.navbar {
+  background-color: transparent;
+  color: var(--white-color);
+  height: 5rem;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+nav a {
+  color: var(--white-color);
+  margin: 0 2rem;
+}
+
+nav a:hover {
+  color: rgb(167, 167, 167);
+}
+
+.drum {
+  margin: 0 1rem;
+}
+/* ---------------------------------------------------------------- */
+
+
+
+
+/* ------------------------------ Hero ---------------------------- */
+.section-hero {
+  height: 100vh;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.171), 
+    rgba(0, 0, 0, 0.171)
+  ),url(../resources/img/main/hero/hero-image.jpg);
+  background-size: cover;
+  background-position: center;
+  color: var(--white-color);
+}
+
+.hero-text {
+  padding: 20rem 0;
+  text-align: center;
+  position: relative;
+  animation: bubbleFromTop 3s;
+}
+
+.hero-text h1 {
+  font-size: 8rem;
+  font-weight: bolder;
+}
+
+.hero-text h5 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+/* ---------------------------------------------------------------- */
+
+
+
+
+/* ---------------------------- Services --------------------------- */
+.section-our-services {
+  margin-top: 3rem;
+}
+
+.section-our-services .container{
+  overflow: unset;
+}
+
+.section-our-services .grid {
+  gap: 2rem;
+}
+
+.service-1 {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.600), 
+    rgba(0, 0, 0, 0.600)
+  ),url(../resources/img/main/services/service-songs.jpg);
+  background-size: cover;
+  background-position: center;
+  color: var(--white-color);
+  transition: all .2s ease-in-out;
+}
+
+.service-2 {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.500), 
+    rgba(0, 0, 0, 0.500)
+  ),url(../resources/img/main/services/service-vocals.jpg);
+  background-size: cover;
+  background-position: center;
+  color: var(--white-color);
+  transition: all .2s ease-in-out;
+}
+
+.service-3 {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.400), 
+    rgba(0, 0, 0, 0.400)
+  ),url(../resources/img/main/services/service-instruments.jpg);
+  background-size: cover;
+  background-position: center;
+  color: var(--white-color);
+  transition: all .2s ease-in-out;
+}
+
+
+.service-1:hover { transform: scale(1.05); }
+.service-2:hover { transform: scale(1.05); }
+.service-3:hover { transform: scale(1.05); }
+/* ---------------------------------------------------------------- */
+
+
+
+
+/* --------------------------- Utilities -------------------------- */
+.section-utilities {
+  margin-top: 3rem;
+}
+
+.utilities {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 5rem;
+  column-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Songs List - Graphics */
+.songs-playlist-graphics {
+  border: solid 0.4rem rgb(0, 0, 0);
+  border-radius: 2rem; 
+  height: 51.5rem;
+}
+
+.songs-playlist-graphics h3 {
+  font-size: 4rem; 
+  font-family: var(--cursive-font);
+}
+
+.songs-playlist-graphics img {
+  height: 30rem;
+}
+
+/* Songs List - Playlist */
+.songs-playlist {
+  height: 51.7rem;
+  border: solid 0.15rem var(--light-border); 
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.songs-playlist h3 {
+  margin-top: 1rem;
+}
+
+.scrollable-list {
+  margin-top: 1rem; 
+  height: 46.5rem; 
+  overflow: scroll;
+}
+
+.scrollable-list::-webkit-scrollbar {
+  display: none;
+}
+
+.song-container {
+  color: var(--white-color);
+  border-radius: 2rem;
+  margin: 0.1rem 0;
+  background: linear-gradient(-90deg, #000000, #474747, #5b5761, #8b8a8a);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 5s ease infinite;
+  animation: Gradient 10s ease infinite;
+}
+
+.song-container .grid {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0rem;
+}
+
+.playnow-grid {
+  grid-column: 2/span 4;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.song-thumbnail {
+  height: 5rem; 
+  width: 5rem; 
+  border-radius: 3rem;
+}
+
+.song-controls {
+  margin-right: auto;
+}
+
+.song-controls .lead-text{
+  min-width: 10rem;
+}
+
+#playlist-button-play {
+  cursor: pointer;
+}
+
+#playlist-button-play:hover{
+  color: rgb(167, 167, 167);
+}
+
+.utilities .flex {
+  justify-content: flex-end;
+}
+
+.play-button {
+  margin: 0 0.5rem;
+}
+
+.song-waverforms {
+  grid-column: 1 / span 2;
+}
+
+/* Voice Recorder - Recording Controls */
+.vocals-box {
+  height: 53rem; 
+  border: solid 0.15rem var(--light-border);  
+  border-radius: 2rem;
+}
+
+.vocals-box .grid {
+  height: 48.7rem;
+  gap: 0rem;
+}
+
+.vocals-box h3 {
+  margin-top: 1rem;
+}
+
+.microphone {
+  grid-column: 1 / span 2;
+}
+
+.microphone img {
+  height: 30rem;
+  width: 25rem;
+  position: absolute;
+  margin-left: 6rem;
+}
+
+.microphone svg {
+  width: 100%;
+  height: 32rem;
+  position: relative;
+  bottom: 4rem;
+}
+
+.microphone-audio-controls {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  grid-column: 1 / span 2; 
+  justify-content: space-evenly;
+  border: 0.2rem solid rgb(219, 219, 219);
+  border-radius: 1rem;
+}
+
+.microphone-download-controls {
+  grid-column: 1 / span 2;
+}
+
+.microphone-download-controls a {
+  color: red;
+}
+
+.microphone-audio-controls i,
+.microphone-download-controls i {
+  font-size: 2rem;
+  cursor: pointer;
+  color: rgb(52, 50, 185);
+  margin-top: 1rem;
+}
+
+.microphone-audio-controls i:hover{
+  color: rgb(94, 94, 94);
+}
+
+.microphone-download-controls a:hover{
+  color: rgb(94, 94, 94);
+}
+
+.microphone-audio-controls p,
+.microphone-download-controls a {
+  cursor: pointer;
+}
+
+.icon-record.active{
+  color: rgb(197, 0, 0);
+}
+
+.button-disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.waveforms {
+  border: solid 0.1rem var(--primary-color);
+  border-radius: 0.5rem;
+  grid-column: 1 / span 2;
+  height: 5rem; 
+  width: 34.3rem; 
+  text-align: center; 
+  margin: 0 auto;
+}
+
+.record-icon {
+  height: 3rem;
+  width: 3rem;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Voice Recorder - Graphics */
+.voice-recorder-graphics {
+  border: solid 0.4rem rgb(0, 0, 0);
+  border-radius: 2rem; 
+}
+
+.voice-recorder-graphics h3 {
+  font-size: 4rem; 
+  font-family: var(--cursive-font);
+}
+
+.voice-recorder-graphics img {
+  height: 38rem;
+}
+
+/* Instruments - Graphics */
+.music-intruments-graphics {
+  border: solid 0.4rem rgb(0, 0, 0);
+  border-radius: 2rem; 
+}
+
+.music-intruments-graphics h3 {
+  font-size: 4rem; 
+  font-family: var(--cursive-font);
+}
+
+/* Instruments - Play Instruments */
+.play-instruments {
+  border: solid 0.15rem var(--light-border);  
+  border-radius: 2rem;
+  padding: 0 6rem;
+}
+
+.play-instruments h3 {
+  margin-top: 1rem;
+}
+
+.play-instruments img {
+  border-radius: 1rem;
+}
+
+.instrument-1,
+.instrument-2 {
+  border: solid 0.1rem#eee;
+}
+
+.button-play-piano div {
+  height: 2rem; 
+  width: 12rem; 
+  padding: 0.1rem 0;
+  border: solid 0.1rem var(--secondary-color); 
+  border-radius: 1rem;
+  color: var(--secondary-color);
+}
+
+.button-play-piano div:hover{
+  height: 2rem; 
+  width: 12rem; 
+  padding: 0.1rem 0;
+  border: solid 0.1rem var(--secondary-color);
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.button-play-drumkit div {
+  height: 2rem; 
+  width: 12rem; 
+  padding: 0.1rem 0;
+  border: solid 0.1rem var(--secondary-color); 
+  border-radius: 1rem;
+  color: var(--secondary-color);
+}
+
+.button-play-drumkit div:hover{
+  height: 2rem; 
+  width: 12rem; 
+  padding: 0.1rem 0;
+  border: solid 0.1rem var(--secondary-color);
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+  color: #fff;
+}
+/* ---------------------------------------------------------------- */
+
+
+
+
+/* -------------------------- Our Partners ------------------------ */
+.partners-box {
+  background-color: transparent;
+  color: var(--white-color);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.partners-box h2 {
+  color: #000;
+}
+
+.partner-brands {
+  margin-top: 2rem;
+}
+
+.partner-image {
+  width: 60%;
+  transition: transform 0.4s ease-in;
+}
+
+.partner-image:hover{
+  transform: translateY(-15px);
+}
+/* ---------------------------------------------------------------- */
+
+
+
+
+/* ---------------------------- Footer ---------------------------- */
+footer {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  text-align: center;
+  padding: 2.5rem 0;
+  margin-bottom: 6.5rem;
+}
+/* ---------------------------------------------------------------- */
+
+
+
+
+/* --------------------------- Keyframes --------------------------- */
+@keyframes bubbleFromTop{
+    16%{
+      transform: translateY(-100%);
+      animation-timing-function: ease-in;
+    }
+
+    33% {
+      transform: translateY(0%);
+      animation-timing-function: ease-out;
+    }
+
+    50% {
+      transform: translateY(-20%);
+      animation-timing-function: ease-in;
+    }
+
+    66% {
+      transform: translateY(0%);
+      animation-timing-function: ease-out;
+    }
+
+    83% {
+      transform: translateY(-10%);
+      animation-timing-function: ease-in;
+    }
+
+    100% {
+      transform: translateY(0%);
+      animation-timing-function: ease-out;
+    }
+}
+
+@keyframes Gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+/* ---------------------------------------------------------------- */
